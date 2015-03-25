@@ -1,0 +1,9 @@
+os:
+  - osx
+
+script:
+  - cd ..
+  - mkdir build
+  - cd build
+  - cmake ../llvm -DCMAKE_BUILD_TYPE=Debug
+  - make -j3
